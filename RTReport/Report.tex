@@ -1,0 +1,74 @@
+% Εκτύπωση σε χαρτί A4, μία σελίδα ανά φύλλο, με ξεχωριστή σελίδα για τον τίτλο,σε γραμματοσειρά 11pt και format βιβλίου.
+\documentclass[a4paper,oneside,titlepage,11pt]{book}
+
+% Πακέτα
+\usepackage{fontspec}
+\usepackage{xltxtra}
+\usepackage{polyglossia}
+\usepackage{xcolor,graphicx}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{caption}
+\usepackage{cite}
+\usepackage{setspace}
+\usepackage[hmargin=3cm,vmargin=2.5cm]{geometry}
+\usepackage{wrapfig}
+\usepackage{mdwlist}
+\usepackage{url}
+\usepackage[labelfont={small,bf}, textfont={small}]{caption}
+\usepackage{fancyvrb}
+\usepackage{colortbl}
+
+% Κενό μεταξύ γραμμών
+\setstretch{1.2}
+
+% Ορισμός γλωσσών για ορθογραφικό έλεγχο και hyphenation
+\setmainlanguage[variant=mono,numerals=arabic]{greek}
+\setotherlanguage{english}
+
+% Γραμματοσειρές
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+%\newfontfamily\greekfont[Mapping=tex-text]{DejaVu Serif}
+%\newfontfamily\greekfonttt[Mapping=tex-text]{DejaVu Sans}
+
+% Μέγεθος Γραμματοσειρών για μαθηματικές παραστάσεις
+\DeclareMathSizes{12}{14}{12}{12}
+
+%\widowpenalty=2000
+%\clubpenalty=2000
+
+%Σελίδα Τίτλου
+\begin{document}
+\input{title}
+
+%Περιλήψεις και κατάλογος σχημάτων
+\frontmatter
+\input{summary}
+\renewcommand{\contentsname}{Περιεχόμενα}
+\addcontentsline{toc}{chapter}{Περιεχόμενα}
+\tableofcontents 
+\cleardoublepage
+
+\addcontentsline{toc}{chapter}{Κατάλογος Σχημάτων}
+\listoffigures
+
+%Κυρίως Κείμενο
+\input{intro}
+\input{algs}
+\input{gpgpu}
+\input{implementation}
+\input{perf}
+
+%Παράρτημα
+\input{appendix}
+
+%Βιβλιογραφία
+\backmatter
+\addcontentsline{toc}{chapter}{Βιβλιογραφία}
+\renewcommand{\refname}{\section{Βιβλιογραφία}}
+\bibliography{citations}
+\bibliographystyle{alpha}
+\end{document}
