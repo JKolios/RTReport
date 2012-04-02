@@ -76,12 +76,14 @@
     \gplgaddtomacro\gplbacktext{%
       \csname LTb\endcsname%
       \put(1078,704){\makebox(0,0)[r]{\strut{} 0}}%
-      \put(1078,1317){\makebox(0,0)[r]{\strut{} 1000}}%
-      \put(1078,1929){\makebox(0,0)[r]{\strut{} 2000}}%
-      \put(1078,2542){\makebox(0,0)[r]{\strut{} 3000}}%
-      \put(1078,3154){\makebox(0,0)[r]{\strut{} 4000}}%
-      \put(1078,3767){\makebox(0,0)[r]{\strut{} 5000}}%
-      \put(1078,4379){\makebox(0,0)[r]{\strut{} 6000}}%
+      \put(1078,1163){\makebox(0,0)[r]{\strut{} 1000}}%
+      \put(1078,1623){\makebox(0,0)[r]{\strut{} 2000}}%
+      \put(1078,2082){\makebox(0,0)[r]{\strut{} 3000}}%
+      \put(1078,2542){\makebox(0,0)[r]{\strut{} 4000}}%
+      \put(1078,3001){\makebox(0,0)[r]{\strut{} 5000}}%
+      \put(1078,3460){\makebox(0,0)[r]{\strut{} 6000}}%
+      \put(1078,3920){\makebox(0,0)[r]{\strut{} 7000}}%
+      \put(1078,4379){\makebox(0,0)[r]{\strut{} 8000}}%
       \put(1210,484){\makebox(0,0){\strut{} 0}}%
       \put(2364,484){\makebox(0,0){\strut{} 20}}%
       \put(3518,484){\makebox(0,0){\strut{} 40}}%
@@ -111,7 +113,7 @@
       \put(9091,814){\makebox(0,0)[r]{\strut{}STP 2 GPU}}%
     }%
     \gplbacktext
-    \put(0,0){\includegraphics{benchData/bench_output_50000_1000_10_Js1Win}}%
+    \put(0,0){\includegraphics{bench_output_50000_1000_10_Js1Win}}%
     \gplfronttext
   \end{picture}%
 \endgroup
